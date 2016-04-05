@@ -1,0 +1,16 @@
+{
+  "name": "crypts",
+  "description": "集成一些常用的加密解密算法，如：base64、md5、sha1、crc32、DES等。",
+  "version": "1.0.0",
+  "author": {
+    "name": "Spikef",
+    "email": "Spikef@Foxmail.com",
+    "url": "http://www.xybk.net"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Spikef/crypts",
+  "engines": {
+    "node": ">= 0.10.0",
+    "NodeAsp": ">= 0.0.1"
+  }
+}

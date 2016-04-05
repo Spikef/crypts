@@ -1,14 +1,3 @@
-# crypts
-
-crypts模块集成一些常用的加密解密算法，包括：base64、md5、sha1、crc32、DES等。
-
-同时兼容NodeAsp和node。
-
-## 使用示例 ##
-
-代码示例:
-
-``` javascript
 var path = require('path');
 var crypt = require('crypto');
 var image = path.resolve(__dirname, 'kiss.jpg');
@@ -28,4 +17,3 @@ console.log(v);
 v = crypt.base64.enfile(image);			// 文件base64加密
 console.log(v);
 v = crypt.base64.defile(v, image2);		// 文件base64解密
-```

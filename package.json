@@ -12,12 +12,5 @@
   "engines": {
     "node": ">= 0.10.0",
     "NodeAsp": ">= 0.0.1"
-  },
-  "readme": "# crypts #\n\ncrypts模块集成一些常用的加密解密算法，包括：base64、md5、sha1、sha256、crc32、DES等。\n\n同时兼容NodeAsp和node。\n\n## 使用示例 ##\n\n代码示例:\n\n``` javascript\nvar path = require('path');\nvar crypts = require('crypts');\nvar plain = path.resolve(__dirname, 'test.txt');\nvar image = path.resolve(__dirname, 'kiss.jpg');\nvar image2 = path.resolve(__dirname, 'kiss2.jpg');\n\nvar v = '';\nv = crypts.md5('Spikef');\t\t\t\t    // md5加密\nconsole.log(v);\n// =>  2966c8436b567beffed63d6b56b15b0f\nv = crypts.sha1('Spikef');\t\t\t        // sha1加密\nconsole.log(v);\n// =>  48959ac28700f58ee721b93539fd1bb18a101a3f\nv = crypts.sha256('Spikef');\t\t\t    // sha256加密\nconsole.log(v);\n// =>  48959ac28700f58ee721b93539fd1bb18a101a3f\nv = crypts.crc32(image);\t\t\t        // 文件crc32加密\nconsole.log(v);\n// =>  43E2B211\nv = crypts.base64.encode('Spikef');\t\t    // base64字符串加密\nconsole.log(v);\n// =>  U3Bpa2Vm\nv = crypts.base64.decode('U3Bpa2Vm');\t    // base64字符串解密\n// => Spikef\nconsole.log(v);\nv = crypts.base64.enfile(plain);\t\t\t// 文件base64加密\nconsole.log(v);\n// => Kg==\nv = crypts.base64.enfile(image);\t\t\t// 文件base64加密\nv = crypts.base64.defile(v, image2);\t\t// 文件base64解密\n```",
-  "readmeFilename": "README.md",
-  "_id": "crypts@1.0.2",
-  "scripts": {},
-  "_shasum": "41f17e98243a29ffec7404b194c223894f246bf1",
-  "_from": "node_modules/crypts",
-  "_resolved": "file:node_modules/crypts"
+  }
 }
